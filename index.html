@@ -1,633 +1,767 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samuel Bamigboye — Full-Stack Engineer, Data Analyst & Digital Marketer</title>
-  <meta name="description" content="Samuel Bamigboye is a Full-Stack Software Engineer, Data Analyst, and Digital Marketing professional based in Lagos, Nigeria." />
-  <meta property="og:title" content="Samuel Bamigboye — Portfolio" />
-  <meta property="og:description" content="Full-Stack Engineer · Digital Marketer · Data Analyst" />
-  <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body data-theme="dark">
-
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">SB<span class="logo-dot">.</span></a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#certifications" class="nav-link">Certs</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <span class="theme-icon">☀</span>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <canvas class="particles-canvas" id="particlesCanvas"></canvas>
-    <div class="hero-content">
-      <div class="hero-badge reveal">Available for Opportunities</div>
-      <h1 class="hero-name reveal">
-        Samuel<br /><em>Bamigboye</em>
-      </h1>
-      <div class="hero-titles reveal">
-        <span class="title-prefix">I build&nbsp;</span>
-        <span class="typing-text" id="typingText"></span>
-        <span class="cursor">|</span>
-      </div>
-      <p class="hero-bio reveal">
-        Full-Stack Software Engineer · Data Analyst · Digital Marketing professional bridging robust engineering, actionable data insights, and growth strategy. Based in Lagos, Nigeria.
-      </p>
-      <div class="hero-ctas reveal">
-        <a href="#contact" class="btn btn-primary">Contact Me</a>
-        <a href="#projects" class="btn btn-outline">View Projects</a>
-        <a href="Samuel_Bamigboye_CV-updated_.pdf" class="btn btn-ghost" download>Download CV</a>
-      </div>
-      <div class="hero-stats reveal">
-        <div class="stat"><span class="stat-num" data-target="8">0</span><span>+ Years</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num" data-target="15">0</span><span>+ Certifications</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num" data-target="12">0</span><span>+ Projects</span></div>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">01 / About</span>
-        <h2 class="section-title">The Full Picture</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-photo-wrap reveal">
-          <div class="about-photo-placeholder">
-            <span>SB</span>
-            <div class="photo-ring"></div>
-          </div>
-          <div class="about-location">
-            <span class="location-dot"></span>
-            Lagos, Nigeria
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Samuel Bamigboye — Full-Stack Engineer, Data Analyst & Digital Marketer
+    </title>
+    <meta
+      name="description"
+      content="Samuel Bamigboye is a Full-Stack Software Engineer, Data Analyst, and Digital Marketing professional based in Lagos, Nigeria."
+    />
+    <meta property="og:title" content="Samuel Bamigboye — Portfolio" />
+    <meta
+      property="og:description"
+      content="Full-Stack Engineer · Digital Marketer · Data Analyst"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-theme="dark">
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">SB<span class="logo-dot">.</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certs</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <span class="theme-icon">☀</span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
-        <div class="about-text reveal">
-          <p class="about-intro">
-            I'm a results-driven professional who sits at the intersection of <strong>software engineering</strong>, <strong>data analytics</strong>, and <strong>digital marketing</strong> — combining technical depth, data-driven insight, and creative strategy to build products that grow businesses.
-          </p>
-          <p>
-            With a Bachelor's degree in Computer Science from Caleb University and over 8 years of professional experience, I've delivered scalable web applications at Flick, driven brand growth through data-informed marketing campaigns, and led business analysis initiatives that improved operational performance.
-          </p>
-          <p>
-            I'm Scrum-certified, a McKinsey Forward Program alumnus, and fluent in both code and strategy — whether building microservices with AWS and DynamoDB, or crafting SEO-optimised content that converts audiences into customers.
-          </p>
-          <div class="about-tags">
-            <span class="tag">Node.js</span>
-            <span class="tag">React</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">Google Analytics</span>
-            <span class="tag">Data Analysis</span>
-            <span class="tag">Digital Marketing</span>
-            <span class="tag">AWS</span>
-            <span class="tag">SQL</span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <canvas class="particles-canvas" id="particlesCanvas"></canvas>
+      <div class="hero-content">
+        <div class="hero-badge reveal">Available for Opportunities</div>
+        <h1 class="hero-name reveal">Samuel<br /><em>Bamigboye</em></h1>
+        <div class="hero-titles reveal">
+          <span class="title-prefix">I build&nbsp;</span>
+          <span class="typing-text" id="typingText"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-bio reveal">
+          Full-Stack Software Engineer · Data Analyst · Digital Marketing
+          professional bridging robust engineering, actionable data insights,
+          and growth strategy. Based in Lagos, Nigeria.
+        </p>
+        <div class="hero-ctas reveal">
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+          <a href="#projects" class="btn btn-outline">View Projects</a>
+          <a
+            href="Samuel_Bamigboye_CV-updated_.pdf"
+            class="btn btn-ghost"
+            download
+            >Download CV</a
+          >
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-num" data-target="9">0</span><span>+ Years</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="15">0</span
+            ><span>+ Certifications</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="24">0</span
+            ><span>+ Projects</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
-  <!-- SKILLS -->
-  <section class="section skills" id="skills">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">02 / Skills</span>
-        <h2 class="section-title">Capabilities</h2>
-      </div>
-      <div class="skills-tabs reveal">
-        <button class="skills-tab active" data-tab="engineering">Engineering</button>
-        <button class="skills-tab" data-tab="marketing">Marketing</button>
-        <button class="skills-tab" data-tab="analytics">Analytics</button>
-        <button class="skills-tab" data-tab="tools">Tools</button>
-      </div>
-      <div class="skills-panels">
-        <div class="skills-panel active" id="tab-engineering">
-          <div class="skills-grid">
-            <div class="skill-item reveal"><span class="skill-name">Node.js / TypeScript</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div><span class="skill-pct">90%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">React.js / Redux</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div><span class="skill-pct">85%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">HTML / CSS / JavaScript</span><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div><span class="skill-pct">92%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">Express.js / Nest.js</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div><span class="skill-pct">85%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">RESTful APIs / Integration</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div><span class="skill-pct">88%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">AWS / DynamoDB / MongoDB</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div><span class="skill-pct">78%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">PostgreSQL / MySQL / SQL</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div><span class="skill-pct">80%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">WordPress / Web Development</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div><span class="skill-pct">82%</span></div>
-          </div>
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">01 / About</span>
+          <h2 class="section-title">The Full Picture</h2>
         </div>
-        <div class="skills-panel" id="tab-marketing">
-          <div class="skills-grid">
-            <div class="skill-item reveal"><span class="skill-name">Social Media Marketing</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div><span class="skill-pct">88%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">Content Marketing &amp; SEO</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div><span class="skill-pct">85%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">AI Content Creation</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div><span class="skill-pct">90%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">Email Marketing (Mailchimp)</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div><span class="skill-pct">80%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">Copywriting</span><div class="skill-bar"><div class="skill-fill" data-width="83"></div></div><span class="skill-pct">83%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">Brand Communication</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div><span class="skill-pct">85%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">CRM Management (Intercom, Freshdesk)</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div><span class="skill-pct">82%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">Video Editing (CapCut)</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div><span class="skill-pct">78%</span></div>
+        <div class="about-grid">
+          <div class="about-photo-wrap reveal">
+            <div class="about-photo-placeholder">
+              <img src="IMG_1077.jpg" alt="SB" srcset="" />
+              <div class="photo-ring"></div>
+            </div>
+            <div class="about-location">
+              <span class="location-dot"></span>
+              Lagos, Nigeria
+            </div>
           </div>
-        </div>
-        <div class="skills-panel" id="tab-analytics">
-          <div class="skills-grid">
-            <div class="skill-item reveal"><span class="skill-name">Google Analytics 4 (GA4)</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div><span class="skill-pct">88%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">Data Analysis &amp; Reporting</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div><span class="skill-pct">85%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">Microsoft Excel (Advanced)</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div><span class="skill-pct">90%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">Customer Behavior Analysis</span><div class="skill-bar"><div class="skill-fill" data-width="83"></div></div><span class="skill-pct">83%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">KPI Tracking</span><div class="skill-bar"><div class="skill-fill" data-width="86"></div></div><span class="skill-pct">86%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">Google Sheets</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div><span class="skill-pct">85%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">Business Intelligence</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div><span class="skill-pct">78%</span></div>
-            <div class="skill-item reveal"><span class="skill-name">Market &amp; Competitive Analysis</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div><span class="skill-pct">82%</span></div>
-          </div>
-        </div>
-        <div class="skills-panel" id="tab-tools">
-          <div class="tools-grid">
-            <div class="tool-card reveal"><div class="tool-icon">🎨</div><span>Canva</span></div>
-            <div class="tool-card reveal"><div class="tool-icon">✂️</div><span>CapCut</span></div>
-            <div class="tool-card reveal"><div class="tool-icon">📊</div><span>Google Analytics</span></div>
-            <div class="tool-card reveal"><div class="tool-icon">📧</div><span>Mailchimp</span></div>
-            <div class="tool-card reveal"><div class="tool-icon">💬</div><span>Intercom</span></div>
-            <div class="tool-card reveal"><div class="tool-icon">📱</div><span>Meta Business Suite</span></div>
-            <div class="tool-card reveal"><div class="tool-icon">🔊</div><span>ElevenLabs</span></div>
-            <div class="tool-card reveal"><div class="tool-icon">🗂️</div><span>Office 365</span></div>
-            <div class="tool-card reveal"><div class="tool-icon">📋</div><span>Freshdesk</span></div>
-            <div class="tool-card reveal"><div class="tool-icon">🌐</div><span>WordPress</span></div>
-            <div class="tool-card reveal"><div class="tool-icon">☁️</div><span>AWS</span></div>
-            <div class="tool-card reveal"><div class="tool-icon">🔷</div><span>Figma</span></div>
+          <div class="about-text reveal">
+            <p class="about-intro">
+              I'm a results-driven professional who sits at the intersection of
+              <strong>software engineering</strong>,
+              <strong>data analytics</strong>, and
+              <strong>digital marketing</strong> — combining technical depth,
+              data-driven insight, and creative strategy to build products that
+              grow businesses.
+            </p>
+            <p>
+              With a Bachelor's degree in Computer Science from Caleb University
+              and over 8 years of professional experience, I've delivered
+              scalable web applications at Flick, driven brand growth through
+              data-informed marketing campaigns, and led business analysis
+              initiatives that improved operational performance.
+            </p>
+            <p>
+              I'm Scrum-certified, a McKinsey Forward Program alumnus, and
+              fluent in both code and strategy — whether building microservices
+              with AWS and DynamoDB, or crafting SEO-optimised content that
+              converts audiences into customers.
+            </p>
+            <div class="about-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Google Analytics</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Digital Marketing</span>
+              <span class="tag">AWS</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Forex Traning</span>
+              <span class="tag">AI Content Creation</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section experience" id="experience">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">03 / Experience</span>
-        <h2 class="section-title">Career Timeline</h2>
-      </div>
-      <div class="timeline">
-
-        <div class="timeline-item reveal" data-index="0">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Sept 2023 — Present</div>
-          <div class="timeline-card">
-            <div class="timeline-header" onclick="toggleTimeline(0)">
-              <div>
-                <h3 class="timeline-role">Full-Stack Software Engineer</h3>
-                <span class="timeline-company">Flick · Hybrid · Lagos, Nigeria</span>
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">02 / Skills</span>
+          <h2 class="section-title">Capabilities</h2>
+        </div>
+        <div class="skills-tabs reveal">
+          <button class="skills-tab active" data-tab="engineering">
+            Engineering
+          </button>
+          <button class="skills-tab" data-tab="marketing">Marketing</button>
+          <button class="skills-tab" data-tab="analytics">Analytics</button>
+          <button class="skills-tab" data-tab="tools">Tools</button>
+        </div>
+        <div class="skills-panels">
+          <div class="skills-panel active" id="tab-engineering">
+            <div class="skills-grid">
+              <div class="skill-item reveal">
+                <span class="skill-name">Node.js / TypeScript</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="90"></div>
+                </div>
+                <span class="skill-pct">90%</span>
               </div>
-              <span class="timeline-toggle">+</span>
-            </div>
-            <div class="timeline-body">
-              <ul>
-                <li>Developed and maintained scalable web applications using Node.js, TypeScript, and React.js</li>
-                <li>Designed and maintained secure databases and data storage systems for financial operations</li>
-                <li>Integrated various financial system APIs to enhance backend-to-external service communication</li>
-                <li>Implemented Keycloak-nodejs-connect for centralized authorization and authentication</li>
-                <li>Currently architecting microservices with AWS Serverless and DynamoDB</li>
-                <li>Developed security mechanisms ensuring data protection and regulatory compliance</li>
-              </ul>
-              <div class="timeline-tags"><span>Node.js</span><span>TypeScript</span><span>React</span><span>AWS</span><span>DynamoDB</span><span>Keycloak</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal" data-index="1">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Jan 2024 — Jan 2026</div>
-          <div class="timeline-card">
-            <div class="timeline-header" onclick="toggleTimeline(1)">
-              <div>
-                <h3 class="timeline-role">Business Analyst</h3>
-                <span class="timeline-company">Omabo Ideals Ventures · Lagos, Nigeria</span>
+              <div class="skill-item reveal">
+                <span class="skill-name">React.js / Redux</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+                <span class="skill-pct">85%</span>
               </div>
-              <span class="timeline-toggle">+</span>
-            </div>
-            <div class="timeline-body">
-              <ul>
-                <li>Conducted business and market analysis to support strategic operational decision-making</li>
-                <li>Analyzed customer and project data to identify performance trends and opportunities</li>
-                <li>Assisted in reporting, KPI tracking, and operational performance evaluation</li>
-                <li>Collaborated cross-functionally to improve workflow efficiency and project coordination</li>
-                <li>Prepared executive reports and presentations for management-level decision processes</li>
-              </ul>
-              <div class="timeline-tags"><span>Data Analysis</span><span>KPI Tracking</span><span>Reporting</span><span>Excel</span><span>Strategy</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal" data-index="2">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Nov 2020 — Dec 2023</div>
-          <div class="timeline-card">
-            <div class="timeline-header" onclick="toggleTimeline(2)">
-              <div>
-                <h3 class="timeline-role">Customer Operations Associate</h3>
-                <span class="timeline-company">Flick Inc. · Lagos, Nigeria</span>
+              <div class="skill-item reveal">
+                <span class="skill-name">HTML / CSS / JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="92"></div>
+                </div>
+                <span class="skill-pct">92%</span>
               </div>
-              <span class="timeline-toggle">+</span>
-            </div>
-            <div class="timeline-body">
-              <ul>
-                <li>Managed customer engagement and support operations across digital communication channels</li>
-                <li>Utilized CRM platforms including Freshdesk and Intercom to improve customer workflows</li>
-                <li>Analyzed customer behavior and usage patterns to support product adoption strategies</li>
-                <li>Generated operational insights through data analysis and reporting</li>
-                <li>Collaborated with internal teams to improve customer retention and satisfaction</li>
-              </ul>
-              <div class="timeline-tags"><span>Freshdesk</span><span>Intercom</span><span>CRM</span><span>Analytics</span><span>Customer Success</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal" data-index="3">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Jan 2023 — Oct 2023</div>
-          <div class="timeline-card">
-            <div class="timeline-header" onclick="toggleTimeline(3)">
-              <div>
-                <h3 class="timeline-role">Web Developer</h3>
-                <span class="timeline-company">SAIL [CCHub] · Lagos, Nigeria</span>
+              <div class="skill-item reveal">
+                <span class="skill-name">Express.js / Nest.js</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+                <span class="skill-pct">85%</span>
               </div>
-              <span class="timeline-toggle">+</span>
-            </div>
-            <div class="timeline-body">
-              <ul>
-                <li>Built multiple production websites: artisan portal, healthcare platform, e-commerce site</li>
-                <li>Collaborated with developers to build a hiring platform using React, Tailwind, and Node.js</li>
-                <li>Cloned a Fintech Product website from Figma designs with full responsiveness</li>
-                <li>Built and deployed personal projects on Vercel and Render</li>
-                <li>Built a business website using HTML, CSS, JavaScript, and Python</li>
-              </ul>
-              <div class="timeline-tags"><span>React</span><span>Node.js</span><span>Tailwind</span><span>HTML/CSS</span><span>Figma</span><span>Vercel</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal" data-index="4">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">May 2017 — Sept 2020</div>
-          <div class="timeline-card">
-            <div class="timeline-header" onclick="toggleTimeline(4)">
-              <div>
-                <h3 class="timeline-role">IT Support Analyst</h3>
-                <span class="timeline-company">Dthriz Limited · Lagos, Nigeria</span>
+              <div class="skill-item reveal">
+                <span class="skill-name">RESTful APIs / Integration</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="88"></div>
+                </div>
+                <span class="skill-pct">88%</span>
               </div>
-              <span class="timeline-toggle">+</span>
+              <div class="skill-item reveal">
+                <span class="skill-name">AWS / DynamoDB / MongoDB</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="78"></div>
+                </div>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">PostgreSQL / MySQL / SQL</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="80"></div>
+                </div>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">WordPress / Web Development</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="82"></div>
+                </div>
+                <span class="skill-pct">82%</span>
+              </div>
             </div>
-            <div class="timeline-body">
-              <ul>
-                <li>Provided technical support and troubleshooting across multiple departments</li>
-                <li>Managed system maintenance, software support, and hardware issue resolution</li>
-                <li>Assisted users through remote, telephone, and on-site troubleshooting channels</li>
-                <li>Supported Microsoft Office 365 and operating system environments</li>
-                <li>Collaborated on IT support response efficiency and service delivery improvements</li>
-              </ul>
-              <div class="timeline-tags"><span>Technical Support</span><span>Office 365</span><span>Troubleshooting</span><span>Hardware</span></div>
+          </div>
+          <div class="skills-panel" id="tab-marketing">
+            <div class="skills-grid">
+              <div class="skill-item reveal">
+                <span class="skill-name">Social Media Marketing</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="88"></div>
+                </div>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">Content Marketing &amp; SEO</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">AI Content Creation</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="90"></div>
+                </div>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">Email Marketing (Mailchimp)</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="80"></div>
+                </div>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">Copywriting</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="83"></div>
+                </div>
+                <span class="skill-pct">83%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">Brand Communication</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name"
+                  >CRM Management (Intercom, Freshdesk)</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="82"></div>
+                </div>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">Video Editing (CapCut)</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="78"></div>
+                </div>
+                <span class="skill-pct">78%</span>
+              </div>
             </div>
           </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="section projects" id="projects">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">04 / Projects</span>
-        <h2 class="section-title">Featured Work</h2>
-      </div>
-      <div class="projects-filters reveal">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="engineering">Engineering</button>
-        <button class="filter-btn" data-filter="marketing">Marketing</button>
-        <button class="filter-btn" data-filter="analytics">Analytics</button>
-      </div>
-      <div class="projects-grid">
-
-        <div class="project-card reveal" data-category="engineering">
-          <div class="project-number">01</div>
-          <div class="project-content">
-            <h3>Flick Fintech Platform</h3>
-            <p>Scalable fintech web application with secure database architecture, third-party financial API integrations, and centralized authentication via Keycloak. Currently building microservices on AWS Serverless.</p>
-            <div class="project-tech"><span>Node.js</span><span>TypeScript</span><span>AWS</span><span>DynamoDB</span><span>Keycloak</span></div>
+          <div class="skills-panel" id="tab-analytics">
+            <div class="skills-grid">
+              <div class="skill-item reveal">
+                <span class="skill-name">Google Analytics 4 (GA4)</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="88"></div>
+                </div>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">Data Analysis &amp; Reporting</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">Microsoft Excel (Advanced)</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="90"></div>
+                </div>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">Customer Behavior Analysis</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="83"></div>
+                </div>
+                <span class="skill-pct">83%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">KPI Tracking</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="86"></div>
+                </div>
+                <span class="skill-pct">86%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">Google Sheets</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name">Business Intelligence</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="78"></div>
+                </div>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-item reveal">
+                <span class="skill-name"
+                  >Market &amp; Competitive Analysis</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="82"></div>
+                </div>
+                <span class="skill-pct">82%</span>
+              </div>
+            </div>
           </div>
-          <div class="project-meta"><span class="project-type">Engineering</span></div>
-        </div>
-
-        <div class="project-card reveal" data-category="engineering">
-          <div class="project-number">02</div>
-          <div class="project-content">
-            <h3>Hiring Platform — SAIL</h3>
-            <p>Collaborative hiring platform built with React, Tailwind CSS, and Node.js during the SAIL programme at CCHub. Implemented responsive UI from Figma designs and RESTful API integrations.</p>
-            <div class="project-tech"><span>React</span><span>Tailwind</span><span>Node.js</span><span>Figma</span></div>
-          </div>
-          <div class="project-meta"><span class="project-type">Engineering</span></div>
-        </div>
-
-        <div class="project-card reveal" data-category="engineering">
-          <div class="project-number">03</div>
-          <div class="project-content">
-            <h3>E-Commerce Website</h3>
-            <p>Full-featured e-commerce site that fetches and dynamically populates product data from a public API. Built with HTML, CSS, and JavaScript with full deployment on Vercel.</p>
-            <div class="project-tech"><span>HTML/CSS/JS</span><span>REST API</span><span>Vercel</span></div>
-          </div>
-          <div class="project-meta"><span class="project-type">Engineering</span></div>
-        </div>
-
-        <div class="project-card reveal" data-category="marketing">
-          <div class="project-number">04</div>
-          <div class="project-content">
-            <h3>Araromi Services Ltd — Brand Growth</h3>
-            <p>End-to-end digital marketing overhaul for a cleaning and facility management company. Developed social media strategy, SEO-focused content, Canva visuals, and WhatsApp Business automation workflows.</p>
-            <div class="project-tech"><span>SEO</span><span>Canva</span><span>WhatsApp Business</span><span>Instagram</span><span>Facebook</span></div>
-          </div>
-          <div class="project-meta"><span class="project-type">Marketing</span></div>
-        </div>
-
-        <div class="project-card reveal" data-category="marketing">
-          <div class="project-number">05</div>
-          <div class="project-content">
-            <h3>Rotanda Event Hub — Video Campaign</h3>
-            <p>Produced a cinematic 2-minute promotional video for an event venue using CapCut with professional transitions, storytelling techniques, branded overlays, and strategic captions for social media advertising.</p>
-            <div class="project-tech"><span>CapCut</span><span>Visual Storytelling</span><span>Branding</span><span>Social Media</span></div>
-          </div>
-          <div class="project-meta"><span class="project-type">Marketing</span></div>
-        </div>
-
-        <div class="project-card reveal" data-category="marketing">
-          <div class="project-number">06</div>
-          <div class="project-content">
-            <h3>Farm Save Lives — Faceless Content Brand</h3>
-            <p>Created and managed an AI-powered faceless content brand for agricultural education in Africa. Built a full content strategy with viral hooks, AI-generated scripts, carousel posts, and SEO hashtag systems.</p>
-            <div class="project-tech"><span>AI Scripting</span><span>ElevenLabs</span><span>Canva</span><span>SEO</span><span>Content Strategy</span></div>
-          </div>
-          <div class="project-meta"><span class="project-type">Marketing</span></div>
-        </div>
-
-        <div class="project-card reveal" data-category="analytics">
-          <div class="project-number">07</div>
-          <div class="project-content">
-            <h3>Customer Behavior Analysis — Flick</h3>
-            <p>Leveraged GA4 and CRM data to analyze customer behavior and usage patterns at Flick. Generated operational insights that informed product adoption strategies and improved customer retention.</p>
-            <div class="project-tech"><span>GA4</span><span>Intercom</span><span>Freshdesk</span><span>Excel</span><span>Data Analysis</span></div>
-          </div>
-          <div class="project-meta"><span class="project-type">Analytics</span></div>
-        </div>
-
-        <div class="project-card reveal" data-category="analytics">
-          <div class="project-number">08</div>
-          <div class="project-content">
-            <h3>Business Performance Reporting — Omabo</h3>
-            <p>Built comprehensive business performance reports and dashboards for management at Omabo Ideals Ventures. Identified KPI trends and business opportunities through market and customer data analysis.</p>
-            <div class="project-tech"><span>Excel</span><span>Google Sheets</span><span>KPI Tracking</span><span>Business Analysis</span></div>
-          </div>
-          <div class="project-meta"><span class="project-type">Analytics</span></div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section class="section education" id="education">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">05 / Education</span>
-        <h2 class="section-title">Academic Background</h2>
-      </div>
-      <div class="edu-grid">
-        <div class="edu-card reveal">
-          <div class="edu-icon">🎓</div>
-          <div class="edu-year">2020</div>
-          <h3>Bachelor of Computer Science</h3>
-          <span class="edu-institution">Caleb University, Nigeria</span>
-          <p>Core studies in computer science, software engineering, databases, and systems design. Provided foundational expertise for a career in full-stack development and data analytics.</p>
-        </div>
-        <div class="edu-card reveal">
-          <div class="edu-icon">🏫</div>
-          <div class="edu-year">2016</div>
-          <h3>WAEC / SSCE</h3>
-          <span class="edu-institution">The Great Crescent Secondary School, Nigeria</span>
-          <p>West African Senior School Certificate — foundational academic qualifications.</p>
-        </div>
-        <div class="edu-card edu-extra reveal">
-          <div class="edu-icon">🏆</div>
-          <div class="edu-year">Events</div>
-          <h3>Professional Events</h3>
-          <span class="edu-institution">Industry Participation</span>
-          <ul>
-            <li>Career Fair 2.0 — Interswitch</li>
-            <li>Seminar with Bill Gates — Unleashing the Power of Youth in Science &amp; Innovation</li>
-            <li>McKinsey Forward Program</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section class="section certifications" id="certifications">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">06 / Certifications</span>
-        <h2 class="section-title">Credentials</h2>
-      </div>
-      <div class="cert-categories">
-        <div class="cert-category reveal">
-          <h3 class="cert-cat-title">Digital Marketing &amp; Analytics</h3>
-          <div class="cert-list">
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>AI Content Creation</strong><span>YouTube · 2026</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Digital Marketing</strong><span>Simplilearn · 2024</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Google Data Analytics</strong><span>Coursera · 2024</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Google Analytics Certification</strong><span>Google · 2023</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Fundamentals of Google Analytics 4</strong><span>Alison · 2023</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Video Content Creation in Canva</strong><span>Coursera · 2025</span></div></div>
-          </div>
-        </div>
-        <div class="cert-category reveal">
-          <h3 class="cert-cat-title">Technical &amp; Web Development</h3>
-          <div class="cert-list">
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Advanced Web Development</strong><span>SAIL · 2024</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Web Developer</strong><span>Udemy · 2023</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Google IT Support Professional Certificate</strong><span>Coursera · 2023</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>WordPress Development</strong><span>Udemy &amp; YouTube · 2020</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>SQL Fundamentals</strong><span>Sololearn · 2020</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Video Editing &amp; Filmmaking Masterclass</strong><span>Skillshare · 2020</span></div></div>
-          </div>
-        </div>
-        <div class="cert-category reveal">
-          <h3 class="cert-cat-title">Productivity &amp; Business</h3>
-          <div class="cert-list">
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Advanced Microsoft Excel</strong><span>Simon Sez IT · 2022</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Advanced Outlook</strong><span>Simon Sez IT · 2022</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Business Communication</strong><span>Alison · 2021</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>Desktop Support L1 &amp; L2</strong><span>Udemy · 2020</span></div></div>
-            <div class="cert-item"><span class="cert-dot"></span><div><strong>HTML5 / CSS &amp; Bootstrap</strong><span>Sololearn · 2018</span></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="section services" id="services">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">07 / Services</span>
-        <h2 class="section-title">What I Offer</h2>
-      </div>
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-icon">⚡</div>
-          <h3>Full-Stack Development</h3>
-          <p>End-to-end web application development using Node.js, TypeScript, React, and cloud infrastructure (AWS). Scalable, secure, production-ready.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">📈</div>
-          <h3>Digital Marketing Strategy</h3>
-          <p>Data-driven marketing strategies including SEO, social media campaigns, content strategy, and email marketing to grow brand visibility and audience engagement.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">📊</div>
-          <h3>Data Analysis &amp; Reporting</h3>
-          <p>Actionable business insights from customer data, GA4, KPI tracking, and Excel-based dashboards. Turning raw data into decisions.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">🤖</div>
-          <h3>AI Content Creation</h3>
-          <p>AI-powered content production for faceless YouTube channels, short-form video scripts, carousel posts, and automated content pipelines using ElevenLabs and Canva.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">🎬</div>
-          <h3>Video &amp; Visual Production</h3>
-          <p>Professional promotional video editing (CapCut), branded visual design (Canva), and cinematic storytelling for social media and client pitching.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">🔍</div>
-          <h3>Business Analysis</h3>
-          <p>Market research, competitive analysis, workflow optimisation, and KPI-driven performance evaluation to support strategic business decisions.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">08 / Contact</span>
-        <h2 class="section-title">Let's Connect</h2>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <p class="contact-intro">Whether you have a project, an opportunity, or just want to talk tech and marketing — I'm available and responsive.</p>
-          <div class="contact-links">
-            <a href="mailto:samdlery65@gmail.com" class="contact-link">
-              <span class="contact-link-icon">✉</span>
-              <div><strong>Email</strong><span>samdlery65@gmail.com</span></div>
-            </a>
-            <a href="tel:+2348025378405" class="contact-link">
-              <span class="contact-link-icon">📞</span>
-              <div><strong>Phone</strong><span>+234-802-5378-405</span></div>
-            </a>
-            <a href="https://www.linkedin.com/in/bamigboye-samuel-1765b11a1/" target="_blank" class="contact-link">
-              <span class="contact-link-icon">in</span>
-              <div><strong>LinkedIn</strong><span>bamigboye-samuel</span></div>
-            </a>
-            <a href="https://github.com/samuelBamigboye" target="_blank" class="contact-link">
-              <span class="contact-link-icon">⌥</span>
-              <div><strong>GitHub</strong><span>samuelBamigboye</span></div>
-            </a>
-            <div class="contact-link no-hover">
-              <span class="contact-link-icon">📍</span>
-              <div><strong>Location</strong><span>Lagos, Nigeria</span></div>
+          <div class="skills-panel" id="tab-tools">
+            <div class="tools-grid">
+              <div class="tool-card reveal">
+                <div class="tool-icon">🎨</div>
+                <span>Canva</span>
+              </div>
+              <div class="tool-card reveal">
+                <div class="tool-icon">✂️</div>
+                <span>CapCut</span>
+              </div>
+              <div class="tool-card reveal">
+                <div class="tool-icon">📊</div>
+                <span>Google Analytics</span>
+              </div>
+              <div class="tool-card reveal">
+                <div class="tool-icon">📧</div>
+                <span>Mailchimp</span>
+              </div>
+              <div class="tool-card reveal">
+                <div class="tool-icon">💬</div>
+                <span>Intercom</span>
+              </div>
+              <div class="tool-card reveal">
+                <div class="tool-icon">📱</div>
+                <span>Meta Business Suite</span>
+              </div>
+              <div class="tool-card reveal">
+                <div class="tool-icon">🔊</div>
+                <span>ElevenLabs</span>
+              </div>
+              <div class="tool-card reveal">
+                <div class="tool-icon">🗂️</div>
+                <span>Office 365</span>
+              </div>
+              <div class="tool-card reveal">
+                <div class="tool-icon">📋</div>
+                <span>Freshdesk</span>
+              </div>
+              <div class="tool-card reveal">
+                <div class="tool-icon">🌐</div>
+                <span>WordPress</span>
+              </div>
+              <div class="tool-card reveal">
+                <div class="tool-icon">☁️</div>
+                <span>AWS</span>
+              </div>
+              <div class="tool-card reveal">
+                <div class="tool-icon">🔷</div>
+                <span>Figma</span>
+              </div>
             </div>
           </div>
         </div>
-        <form class="contact-form reveal" id="contactForm">
-          <div class="form-group">
-            <input type="text" id="formName" placeholder="Your Name" required />
-            <label for="formName">Your Name</label>
-          </div>
-          <div class="form-group">
-            <input type="email" id="formEmail" placeholder="Your Email" required />
-            <label for="formEmail">Your Email</label>
-          </div>
-          <div class="form-group">
-            <input type="text" id="formSubject" placeholder="Subject" />
-            <label for="formSubject">Subject</label>
-          </div>
-          <div class="form-group">
-            <textarea id="formMessage" placeholder="Your Message" rows="5" required></textarea>
-            <label for="formMessage">Your Message</label>
-          </div>
-          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
-          <div class="form-success" id="formSuccess">Message sent! I'll be in touch soon.</div>
-        </form>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <span class="footer-logo">SB<span class="logo-dot">.</span></span>
-          <p>Samuel Bamigboye — Full-Stack Engineer · Data Analyst · Digital Marketer</p>
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">03 / Experience</span>
+          <h2 class="section-title">Career Timeline</h2>
         </div>
-        <div class="footer-nav">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/bamigboye-samuel-1765b11a1/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/samuelBamigboye" target="_blank">GitHub</a>
-          <a href="mailto:samdlery65@gmail.com">Email</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 Samuel Bamigboye. All rights reserved.</p>
-        <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
-      </div>
-    </div>
-  </footer>
+        <div class="timeline">
+          <div class="timeline-item reveal" data-index="0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">May 2024 — Present</div>
+            <div class="timeline-card">
+              <div class="timeline-header" onclick="toggleTimeline(0)">
+                <div>
+                  <h3 class="timeline-role">Software Engineer</h3>
+                  <span class="timeline-company"
+                    >Thanearicare · Hybrid · London, UK</span
+                  >
+                </div>
+                <span class="timeline-toggle">+</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>
+                    Developed and maintained scalable web applications using
+                    Node.js, TypeScript, and React.js
+                  </li>
+                  <li>
+                    Designed and maintained secure databases and data storage
+                    systems for healthcare operations
+                  </li>
+                  <li>
+                    Integrated various financial system APIs to enhance
+                    backend-to-external service communication
+                  </li>
+                  <li>
+                    Implemented Keycloak-nodejs-connect for centralized
+                    authorization and authentication
+                  </li>
+                  <li>
+                    Currently architecting microservices with AWS Serverless and
+                    DynamoDB
+                  </li>
+                  <li>
+                    Developed security mechanisms ensuring data protection and
+                    regulatory compliance
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>Node.js</span><span>TypeScript</span><span>React</span
+                  ><span>AWS</span><span>DynamoDB</span><span>Keycloak</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+          <div class="timeline-item reveal" data-index="1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2024 — Jan 2026</div>
+            <div class="timeline-card">
+              <div class="timeline-header" onclick="toggleTimeline(1)">
+                <div>
+                  <h3 class="timeline-role">Business Analyst</h3>
+                  <span class="timeline-company"
+                    >Omabo Ideals Ventures · Lagos, Nigeria</span
+                  >
+                </div>
+                <span class="timeline-toggle">+</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>
+                    Conducted business and market analysis to support strategic
+                    operational decision-making
+                  </li>
+                  <li>
+                    Analyzed customer and project data to identify performance
+                    trends and opportunities
+                  </li>
+                  <li>
+                    Assisted in reporting, KPI tracking, and operational
+                    performance evaluation
+                  </li>
+                  <li>
+                    Collaborated cross-functionally to improve workflow
+                    efficiency and project coordination
+                  </li>
+                  <li>
+                    Prepared executive reports and presentations for
+                    management-level decision processes
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>Data Analysis</span><span>KPI Tracking</span
+                  ><span>Reporting</span><span>Excel</span><span>Strategy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-index="2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Sept 2023 — Present</div>
+            <div class="timeline-card">
+              <div class="timeline-header" onclick="toggleTimeline(2)">
+                <div>
+                  <h3 class="timeline-role">
+                    Digital Marketing & Brand Growth
+                  </h3>
+                  <span class="timeline-company"
+                    >Aroromi Services LTD · Full Time · Lagos, Nigeria</span
+                  >
+                </div>
+                <span class="timeline-toggle">+</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>
+                    Developed social media marketing strategies for a cleaning
+                    and facility management brand
+                  </li>
+                  <li>
+                    Created SEO-focused promotional content for Instagram,
+                    Facebook, and WhatsApp Business
+                  </li>
+                  <li>
+                    Designed marketing materials and branded visuals using Canva
+                  </li>
+                  <li>
+                    Managed customer communication workflows through WhatsApp
+                    Business automation
+                  </li>
+                  <li>
+                    Created engaging captions, service campaigns, and
+                    audience-focused content strategies
+                  </li>
+                  <li>
+                    Improved online brand visibility through organic content
+                    marketing techniques
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>Canva</span><span>CapCut</span><span>Mailchimp</span
+                  ><span>Google Ads</span><span>SEO</span
+                  ><span>Digital Marketing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-index="3">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 — Oct 2023</div>
+            <div class="timeline-card">
+              <div class="timeline-header" onclick="toggleTimeline(3)">
+                <div>
+                  <h3 class="timeline-role">Web Developer</h3>
+                  <span class="timeline-company"
+                    >SAIL [CCHub] · Lagos, Nigeria</span
+                  >
+                </div>
+                <span class="timeline-toggle">+</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>
+                    Built multiple production websites: artisan portal,
+                    healthcare platform, e-commerce site
+                  </li>
+                  <li>
+                    Collaborated with developers to build a hiring platform
+                    using React, Tailwind, and Node.js
+                  </li>
+                  <li>
+                    Cloned a Fintech Product website from Figma designs with
+                    full responsiveness
+                  </li>
+                  <li>
+                    Built and deployed personal projects on Vercel and Render
+                  </li>
+                  <li>
+                    Built a business website using HTML, CSS, JavaScript, and
+                    Python
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>React</span><span>Node.js</span><span>Tailwind</span
+                  ><span>HTML/CSS</span><span>Figma</span><span>Vercel</span
+                  ><span>Vite</span><span>GitHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-index="4">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Nov 2020 — Dec 2023</div>
+            <div class="timeline-card">
+              <div class="timeline-header" onclick="toggleTimeline(4)">
+                <div>
+                  <h3 class="timeline-role">Customer Operations Associate</h3>
+                  <span class="timeline-company"
+                    >Flick Inc. · Lagos, Nigeria</span
+                  >
+                </div>
+                <span class="timeline-toggle">+</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>
+                    Managed customer engagement and support operations across
+                    digital communication channels
+                  </li>
+                  <li>
+                    Utilized CRM platforms including Freshdesk and Intercom to
+                    improve customer workflows
+                  </li>
+                  <li>
+                    Analyzed customer behavior and usage patterns to support
+                    product adoption strategies
+                  </li>
+                  <li>
+                    Generated operational insights through data analysis and
+                    reporting
+                  </li>
+                  <li>
+                    Collaborated with internal teams to improve customer
+                    retention and satisfaction
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>Freshdesk</span><span>Intercom</span><span>CRM</span
+                  ><span>Analytics</span><span>Customer Success</span
+                  ><span>Notion</span><span>ClickUp</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-index="5">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">May 2017 — Sept 2020</div>
+            <div class="timeline-card">
+              <div class="timeline-header" onclick="toggleTimeline(5)">
+                <div>
+                  <h3 class="timeline-role">IT Support Analyst</h3>
+                  <span class="timeline-company"
+                    >Dthriz Limited · Lagos, Nigeria</span
+                  >
+                </div>
+                <span class="timeline-toggle">+</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>
+                    Provided technical support and troubleshooting across
+                    multiple departments
+                  </li>
+                  <li>
+                    Managed system maintenance, software support, and hardware
+                    issue resolution
+                  </li>
+                  <li>
+                    Assisted users through remote, telephone, and on-site
+                    troubleshooting channels
+                  </li>
+                  <li>
+                    Supported Microsoft Office 365 and operating system
+                    environments
+                  </li>
+                  <li>
+                    Collaborated on IT support response efficiency and service
+                    delivery improvements
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>Technical Support</span><span>Office 365</span
+                  ><span>Troubleshooting</span><span>Hardware</span
+                  ><span>Tawk.to</span><span>Problem Solving</span
+                  ><span>Google Solution</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item reveal" data-index="6">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jun 2016 — Feb 2017</div>
+            <div class="timeline-card">
+              <div class="timeline-header" onclick="toggleTimeline(6)">
+                <div>
+                  <h3 class="timeline-role">IT Support</h3>
+                  <span class="timeline-company"
+                    >Ministry of Youth and Social Development, Alausa Ikeja ·
+                    Lagos, Nigeria</span
+                  >
+                </div>
+                <span class="timeline-toggle">+</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>
+                    Work with a team to create the First profiling website for
+                    the Ministry of Youth and Social department.
+                  </li>
+                  <li>Scan old documents and publish them on the website.</li>
+                  <li>
+                    Visiting orphanages, rehab centres, old people housing and
+                    prisons in Lagos for data captioning, profiling and
+                    registration.
+                  </li>
+                  <li>
+                    Create a new profile for newly intake kids for adoption and
+                    rehabilitation.
+                  </li>
+                  <li>
+                    Digitalise the process of application in various units
+                    mentioned above.
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>Technical Support</span><span>Teamwork</span
+                  ><span>Time Management</span><span>Communication Skills</span
+                  ><span>Productivity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">04 / Projects</span>
+          <h2 class="section-title">Featured Work</h2>
+        </div>
+        <div class="projects-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="engineering">
+            Engineering
+          </button>
+          <button class="filter-btn" data-filter="marketing">Marketing</button>
+          <button class="filter-btn" data-filter="analytics">Analytics</button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal" data-category="engineering">
+            <div class="project-number">01</div>
+            <div class="pro
